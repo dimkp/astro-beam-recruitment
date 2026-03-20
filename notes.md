@@ -35,7 +35,8 @@ Instructions:
     4. Simultaneous display of Time Sink and Frequency Sink.
 
 **Comments on the plots**
-    In the time domain we can see how the amplitude of the signal changes overtime. We can see a clean sine wave,that is periodic, smooth and has a single-frequency tone. 
+    
+    In the time domain we can see how the amplitude of the signal changes overtime. We can see a clean sine wave,that is periodic, smooth and has a          single-frequency tone. 
     It can be represented as: x(t) = A x cos(2 x pi x f x t + Φ)
         Where:
         - A is the amplitude
