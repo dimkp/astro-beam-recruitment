@@ -37,18 +37,18 @@ Instructions:
 **Comments on the plots**
     
    In the time domain we can see how the amplitude of the signal changes overtime. We can see a clean sine wave,that is periodic, smooth and has a          single-frequency tone. 
-    It can be represented as: x(t) = Acos(2pift + Φ)
-        Where:
-        - A is the amplitude
-        - f the frequency
-        - t is the time in seconds
-        - Φ is the phase angle of the signal
+   It can be represented as: x(t) = Acos(2pift + Φ)
+      Where:
+        * A is the amplitude
+        * f the frequency
+        * t is the time in seconds
+        * Φ is the phase angle of the signal
     
    In the frequency domain we can see the frequencies that are present in the signal. The frequency spike corresponds to the sine wave's frequency.
    It can be represented as: X(f) = Aδ(f - f0)
-        Where:
-        - A is the amplitude
-        - δ is the Dirac delta function with its center on f0
+      Where:
+        * A is the amplitude
+        * δ is the Dirac delta function with its center on f0
 
    **Frequency Sink Spike explanation:** I is known from Fourier series theory, that a signal with a non-zero average value has a constant offset with      zero frequency, that's why the spike is present at 0kHz.
 
