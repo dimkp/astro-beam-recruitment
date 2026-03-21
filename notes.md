@@ -29,7 +29,7 @@
 
 Instructions: 
     1. Sample Rate of 100k points per second.
-    2. - Sine wave generation at 1420 MHz offset.
+    2. - Sine wave generation at 1420 MHz offset => **In Part 4. it is changed to 0 due to a mistake by me**.
        - "Hydrogen Line" frequency at 10kHz.
     3. Throttle block.
     4. Simultaneous display of Time Sink and Frequency Sink.
@@ -87,10 +87,36 @@ Blocks Added for the new flowgraph:
    Even with *amplitude: 10000* the spike is still visible, although smaller due to the increase of the relative gain of the *spectral line* in general. If we set the *offset* from 1420e3 -> 0, then the spike at 0Hz disapeers completely.
 
    **About detecting weak astronomical signals:**
-   
+
    After adding a single noise source to a simple sine waveform and seeing how distorted the signal is, it is clear that the detection of astronomical signals is difficult and requires complicated processing techniques.
 
 **Information sources used for Part 3.:** personal knowledge, the official GNU Radio wiki, Stack Overflow and MathWorks site.
+
+
+## Important Note:## due to a mistake from me, from **Part 4.** going forward, the offset changes from 1420e3 -> 0
+
+## Changes in settings for Part 4. 
+   
+   - Noise amplitude back to initial value: 1
+
+
+# Part 4. | Filtering
+
+   **Low Pass Filter Settings:**
+   
+   - Decimation: 1
+   - Gain: 1
+   - Sample rate: 32k
+   - Cutoff Freq. for 1st run: 10kHz
+   - Transition Width for 1st run: 1kHz
+   - Cutoff Freq. for 2nd run: 5kHz 
+   - Transition Width for 2nd run: 1kHz
+   - Window: Hamming
+   - Beta: 6.76
+
+   **Comments on the plots**
+
+   * 
 
 
 
