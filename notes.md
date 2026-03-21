@@ -190,8 +190,29 @@ Blocks added for the new flowgraph:
 
    Coding in **Python** gives more control and flexibility over every step of the signal analysis, while **GNU Radio companion** is easier for seeing how the date flows from one step to the next and it's faster for prototyping.  
 
+**Information sources and help for Part 5.:** Python documentation, ChatGPT for information regarding some of the code.
+
+   
+# Part 6. | Your Turn
+
+   **Option B:** Use a **QT GUI Range** widget to make the noise amplitude adjustable with a slider while the flowgraph is running. Observe and screenshot the effect in real time.
+
+
+
+   **Option C:** Research what the **FFT Size** parameter in the Frequency Sink does and experiment with several values. Describe the tradeoff between frequency resolution and time resolution.
+
+
+**Information sources for Part 6.:**
+
+
+# Part 7. | The Real Thing
+
+### First: 
+
    
    
+### Second:
+
 
 
 
