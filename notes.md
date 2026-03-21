@@ -87,6 +87,7 @@ Blocks Added for the new flowgraph:
    Even with *amplitude: 10000* the spike is still visible, although smaller due to the increase of the relative gain of the *spectral line* in general. If we set the *offset* from 1420e3 -> 0, then the spike at 0Hz disapeers completely.
 
    **About detecting weak astronomical signals:**
+   
    After adding a single noise source to a simple sine waveform and seeing how distorted the signal is, it is clear that the detection of astronomical signals is difficult and requires complicated processing techniques.
 
 **Information sources used for Part 3.:** personal knowledge, the official GNU Radio wiki, Stack Overflow and MathWorks site.
