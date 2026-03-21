@@ -36,8 +36,8 @@ Instructions:
 
 **Comments on the plots**
     
-   In the time domain we can see how the amplitude of the signal changes overtime. We can see a clean sine wave,that is periodic, smooth and has a    single-frequency tone. 
-   It can be represented as: x(t) = Acos(2pift + Φ)
+   In the time domain we can see how the amplitude of the signal changes overtime. We can see a clean sine wave,that is periodic, smooth and has a single-frequency tone. 
+   It can be represented as: x(t) = Asin(2pift + Φ)
    
    Where:
       
@@ -154,7 +154,46 @@ Blocks added for the new flowgraph:
 **Information sources used for Part 5.:** GNU Radio wiki for how the Selector Block works, aanda.org, astro.cornell.edu, Springer Nature website.
 
 
-# Part 5.5 | 
+# Part 5.5 | Analyzing Your Signal in Python
+
+**Comments for every code instruction is present in the .py file for convenience, as the file is pretty small**
+
+   **Comments for the results of Parts 5.5.1 and 5.5.2**
+   
+   We can se the sine signal clearly because of the *two spikes* at ~-1000 and ~1000 Hz. We can see both the negative and the positive values becuse the FFT computes both so i chose to not remove them for the first two parts but i will remove them for the rest for convenience and clarity.
+
+   **Comments for the results of Part 5.5.3 and Part 5.5.4**
+   
+   I chose to implement my own Smoothing function because i wanted to experiment with Python a bit more, no other reason.
+
+   We can see both signals (Raw = Blue and Smoothed = Red) on the same plot and we can see that the smoothing loop worked correctly. The noise is reduced as it's evident from the smoother waveform and the smaller spikes, while the signal still passes through as we can see from the, smaller and smoother but stil evident, peak at 1000 Hz.
+
+   **Comments for the results of Part 5.5.5**
+
+   Again, i chose to implement my own linear search algorithm just to experiment with Python.
+
+   The *frequency index* where the singal peaks changes depending on the size of the sample_rate. That happens mainly because of the FFT. The FFT doesn't see every frequency on it;s own but as bins with a distance between then that is calculated: distance = sample_rate / array_size. So the peak **value** goes no to the true value but to the nearest bin, but the peak **index** i believe it is calculated correctly. I searched the Python documentation and couldn't anything on how to resolve this issue so i report it here. 
+   
+   Test results: 
+
+   - For N = 1000 and sample_rate = 10000, the peak value is 1050.0 Hz and the peak index is 105
+   - For N = 5000 and sample_rate = 10000, the peak value is 1006.0 Hz and the peak index is 503
+   - For N = 10000 and sample_rate = 10000, the peak value is 997.0 Hz and the peak index is 997
+
+   As we can see, the bigger the size of the samples (N) => the bigger the accuracy of the result. If the sample size (N) is small enough, the peak frequency value can be calculated as bigger than the signals frequency.
+
+   **Note for push**
+
+   The code will get pushed with N = 1000, sample_rate = 10000 because i can't see the plots clearly, due to my VMs low resolution. 
+
+   **GRC vs Python**
+
+   Coding in **Python** gives more control and flexibility over every step of the signal analysis, while **GNU Radio companion** is easier for seeing how the date flows from one step to the next and it's faster for prototyping.  
+
+   
+   
+
+
 
 
 
