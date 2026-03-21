@@ -136,9 +136,25 @@ Blocks Added for the new flowgraph:
    - By making the filter very narrow, we remove more noise but also lose some potentially usefull frequencies that were higher than the filters cutoff.
    - Answered in *Comments on the plots for 3.*.
 
-**Information sources used for Part 3.:** personal knowledge, the official GNU Radio wiki, Scribd.com "Disadvantages of a Low Pass Filter" and MathWorks site.
+**Information sources used for Part 4.:** personal knowledge, the official GNU Radio wiki, Scribd.com "Disadvantages of a Low Pass Filter", MathWorks site and CHatGPT for explanation of how the filter parameters work because the documentaion was a bit chaotic.
 
 
+# Part 5. | Simulating an Observation
+
+Blocks added for the new flowgraph:   
+   
+   - 2 Signal Sources, one with frequency 10kHz and Amplitude 1 and the other with the same frequency and Amplitude 0.
+   - A **Selector Block** with 2 inputs and 2 outputs. The **Selector Block** can be found under the label **Misc**
+   - 2 QT Frequency Sinks, one for plotting the OFF state and one for the ON state.
+
+   By observing the **Off position** astronomers can calculate the noise produced by the atmosphere, the environment or other sources and then subtract it from the *weaker* signal of the object they want to observe in the **On position**. 
+
+   The mathematical representation is: Reduced_spectrum = (ON - OFF) / OFF
+
+**Information sources used for Part 5.:** GNU Radio wiki for how the Selector Block works, aanda.org, astro.cornell.edu, Springer Nature website.
+
+
+# Part 5.5 | 
 
 
 
