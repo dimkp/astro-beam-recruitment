@@ -77,20 +77,17 @@ Blocks Added for the new flowgraph:
    - Test amplitude for fun: 10000
    - Seed: 0
 
-    **Note:** The screeshots are from the 1st and 3rd runs to better demostrate the differences. A screenshot for *offset: 0* is placed in the foleder as well.
+   **Note:** The screeshots are from the 1st and 3rd runs to better demostrate the differences. A screenshot for *offset: 0* is placed in the foleder as well.
 
-    **Report for amplitude changes**
+   **Report for amplitude changes**
 
-    Starting with *amplitude: 1* we can still see the sine waveform in the time domain and can still see *spectral line* and the *energy spike* in the frequency domain pretty clearly. However, as the *amplitude of the noise increases gradually from 1 to 10,* and at around *amplitude: 3* the sine waveform becomes harder to distinguish due to the increase of the irregularities added, from the noise, to the signal.
+   Starting with *amplitude: 1* we can still see the sine waveform in the time domain and can still see *spectral line* and the *energy spike* in the frequency domain pretty clearly. However, as the *amplitude of the noise increases gradually from 1 to 10,* and at around *amplitude: 3* the sine waveform becomes harder to distinguish due to the increase of the irregularities added, from the noise, to the signal.
 
-    After testing with different amplitude values, the *spectral line* **DOES NOT** disapeer completely due to the offset not being 0.
-    Even for the the *amplitude: 10000* the spike is still visible, although smaller due to the increase of the relative gain of the *spectral line* in general. If we set the *offset* from 1420e3 -> 0, then the spike at 0Hz disapeers completely.
+   After testing with different amplitude values, the *spectral line* **DOES NOT** disapeer completely due to the offset not being 0.
+   Even with *amplitude: 10000* the spike is still visible, although smaller due to the increase of the relative gain of the *spectral line* in general. If we set the *offset* from 1420e3 -> 0, then the spike at 0Hz disapeers completely.
 
-    **About detecting weak astronomical signals:**
-
-    After adding a single noise source to a simple sine waveform and seeing how distorted the signal is, it is clear that the detection of astronomical signals is difficult and requires complicated processing techniques.
-
-
+   **About detecting weak astronomical signals:**
+   After adding a single noise source to a simple sine waveform and seeing how distorted the signal is, it is clear that the detection of astronomical signals is difficult and requires complicated processing techniques.
 
 **Information sources used for Part 3.:** personal knowledge, the official GNU Radio wiki, Stack Overflow and MathWorks site.
 
