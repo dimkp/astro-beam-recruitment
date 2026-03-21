@@ -114,9 +114,30 @@ Blocks Added for the new flowgraph:
    - Window: Hamming
    - Beta: 6.76
 
-   **Comments on the plots**
+   **Answer for 1.**
 
-   * 
+   *Cutoff frequency* is firstly set to 10kHz and the *Transition Width* is set to 1kHz and then the *Cutoff frquency* is decreased to 5kHz while the *Transition Width* stays the same.
+
+   **Answer for 2.**
+
+   - Cutoff frequency: 5kHz
+   - Transition Width: 1kHz
+
+   Between the **filtered** and the **unfiltered** signals we can see that, in the filtered signal, the amplitude variations are gratly reduced and that indicates that a big part of the noise has been removed. However, as we can see the sine waveform, is still not clearly visible which proves that filtering helps improve the quality of the signal but does not complytely eliminate the noise.
+
+   **Comments on the plots for 3.**
+
+   * Setting the *Cutoff frequency* value close to the signal value of 10kHz, we can see, the spike in the frequency domain belongs in the *passband* (almost straight line from around -10kHz -> 10kHz), that the signal passes through the filter and some of the noise is removed.
+   * Changing the *Cutoff frequency* value from 10kHz to 5kHz, we can see that the spike at 10kHz, **IS NOT** part of the passband, so the signal does not pass through the filter.
+
+   **Additional questions for Part 4.**
+
+   - Filtering does not recover the signal from noise, but it helps make it a little bit more distinguisable by removing some of the noise.
+   - By making the filter very narrow, we remove more noise but also lose some potentially usefull frequencies that were higher than the filters cutoff.
+   - Answered in *Comments on the plots for 3.*.
+
+**Information sources used for Part 3.:** personal knowledge, the official GNU Radio wiki, Scribd.com "Disadvantages of a Low Pass Filter" and MathWorks site.
+
 
 
 
