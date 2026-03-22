@@ -197,12 +197,18 @@ Blocks added for the new flowgraph:
 
    **Option B:** Use a **QT GUI Range** widget to make the noise amplitude adjustable with a slider while the flowgraph is running. Observe and screenshot the effect in real time.
 
+   Nothing unusual to report, the widget works as intented. Screenshots are saved in the apropriate folder.
 
 
    **Option C:** Research what the **FFT Size** parameter in the Frequency Sink does and experiment with several values. Describe the tradeoff between frequency resolution and time resolution.
 
+   The **FFT Size** parameter refers to the size of the sample used to compute a single FFT frame. Larger FFT value results in *higher resolution* for the spectral lines but longer computation times and lower resolution for the time sink. The bigger the value of N, the smaller the precision is because for higher T we can see a bigger portion of the signal. That makes finding **when** something specific happened, harder.
+      
+   Frequency resolution: Df = Fs / N, where Fs: sample rate and N: FFT Size
+   
+   According to the official documentation the FFT Size value is recommended to be a power of 2 because the number of spectral lines is calculated by the equation: FFT Size / 2.
 
-**Information sources for Part 6.:**
+**Information sources for Part 6.:** GNU Radio wiki, National Instruments - Understanding FFTs and Windowing, dsprelated.com - Safe FFT resolution reduction and transfer functions, Rational acoustics - Time Resolution versus Frequence resolution, Dewsoft - Guide to FFT analysis
 
 
 # Part 7. | The Real Thing
