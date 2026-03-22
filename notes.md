@@ -20,6 +20,12 @@
     * **QT GUI Time Sink:** a block that displays multiple signals in time. Found under **Instrumentation and then QT**.
     * **Throttle:** limiter of sample rate to a specified average rate using the system clock. Found under **Misc**.
 
+The **Throttle block** is necessary to keep the system resources approprietly allocated because:
+
+- it limits the flow of samples so that their average rate does not exceed the specified sample rate.
+- it's exclusion may lead to unpredictable waveforms.
+- it also limits the CPU power that the signal consumes and it prevents it from consumming all the available processing power of the CPU.
+
 
 **Issues with Part 1.:** no issues were encountered in Part 1. except the VM set-up problem that was resolved easily from the Oracle VM start screen.
 
