@@ -7,6 +7,7 @@
         - sudo apt install gnuradio -y
     * **Launch:**
         - gnuradio-companion
+
 **Source:** The instructions were found from the **GNU Radio wiki**.
 
 2. Screenshot uploaded to GitHub via the host windows machine due to a configuration issue that has been solved.
@@ -93,7 +94,7 @@ Blocks Added for the new flowgraph:
 **Information sources used for Part 3.:** personal knowledge, the official GNU Radio wiki, Stack Overflow and MathWorks site.
 
 
-## Important Note:## due to a mistake from me, from **Part 4.** going forward, the offset changes from 1420e3 -> 0
+## Important Note: due to a mistake by me, from **Part 4.** going onward, the offset changes from 1420e3 -> 0
 
 ## Changes in settings for Part 4. 
    
