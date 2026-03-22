@@ -7,6 +7,7 @@
         - sudo apt install gnuradio -y
     * **Launch:**
         - gnuradio-companion
+
 **Source:** The instructions were found from the **GNU Radio wiki**.
 
 2. Screenshot uploaded to GitHub via the host windows machine due to a configuration issue that has been solved.
