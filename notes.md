@@ -212,16 +212,22 @@ Blocks added for the new flowgraph:
 **Information sources for Part 6.:** GNU Radio wiki, National Instruments - Understanding FFTs and Windowing, dsprelated.com - Safe FFT resolution reduction and transfer functions, Rational acoustics - Time Resolution versus Frequence resolution, Dewsoft - Guide to FFT analysis
 
 
+### Jokes on you i chose Option C
+
+
 # Part 7. | The Real Thing
 
-### First: 
+## First: 
 
-   
-   
-### Second:
+The flowgraph is a pipeline that analyses the Hydrogen line. The input signal is split into 2 delayed paths, is converted into a vector and then filtered by the *Multiply const* blocks. After that, the 3 branches are added and go through a Fourier Transform block to get the frequency of the signal. Then the *Magnitude* is calculated and squared and lastly, the processed signal is displayed on a *Vector Sink* and is written to binary by the *File sink*. This is usefull if we want to further analyse the singal and/or store it.
 
 
+## Second:
 
+The blocks that are missing are the **source block + throtle**, the **Noise block** and their **Add block** that provide the signal to the pipeline to analyze and one line of a **delay block** and a **multiply const block**. It needs to be there to provide the signal and i found it by searching in the documentation the key: *osmosdr_source* and the fact that the flowgraph doesn't have a source block. The other 3 blocks i thought that the missing input of the second **add block** had to be the same as the other 3 in order to get the same type of signals and then combine them to get the frequencies via the **FFT block**.
 
+**Note:** the file path for the **File Sink blockc** changed to a local one in order to execute properly, so you will have to change it to where you want it. 
 
+The version i believe is correct is stored in the appropriate folder. The obs2,dat file i created locally is also included in the folder.
 
+**Information sources for Part 7.:** GNU Radio wiki, GNU Radio FAQ page
