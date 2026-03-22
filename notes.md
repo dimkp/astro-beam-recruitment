@@ -224,7 +224,7 @@ The flowgraph is a pipeline that analyses the Hydrogen line. The input signal is
 
 ## Second:
 
-The blocks that are missing are the **source block + throtle**, the **Noise block** and their **Add block** that provide the signal to the pipeline to analyze and one line of a **delay block** and a **multiply const block**. It needs to be there to provide the signal and i found it by searching in the documentation the key: *osmosdr_source* and the fact that the flowgraph doesn't have a source block. The other 3 blocks i thought that the missing input of the second **add block** had to be the same as the other 3 in order to get the same type of signals and then combine them to get the frequencies via the **FFT block**.
+The blocks that are missing are the **source block + throtle**, the **Noise block** and their **Add block** that provide the signal to the pipeline to analyze and one line of a **delay block** and a **multiply const block**. They need to be there to provide the signal and i found it by searching in the documentation the key: *osmosdr_source* and the fact that the flowgraph doesn't have a source block. The other 3 blocks i thought that the missing input of the second **add block** had to be the same as the other 3 in order to get the same type of signals and then combine them to get the frequencies via the **FFT block**.
 
 **Note:** the file path for the **File Sink blockc** changed to a local one in order to execute properly, so you will have to change it to where you want it. 
 
